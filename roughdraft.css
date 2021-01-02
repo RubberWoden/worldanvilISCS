@@ -1,0 +1,41 @@
+/*
+I would like to make the sheet grayscale. Can make others later.
+Can use normal html color names such as DarkGrey, DimGrey, Gainsboro, LightGrey, Silver, and WhiteSmoke.
+*/
+* {
+    font-family: 'Yanone Kaffeesatz';
+}
+body {
+    background-color: dimgray;
+}
+.row {
+    margin: 1px;
+}
+.col {
+    margin: 1px;
+}
+.card {
+    border-style: ridge;
+    border-width: 0px;
+    background-color: lightgray;
+    margin: 1px;
+    margin-top: 2px;
+    padding: 1px;
+    font-size: x-small;
+}
+.jumbotron {
+    background-color: black;
+    padding: 0%;
+    margin: 0%;
+    border: 0px;
+}
+h1 {
+    color: white;
+    font-size: 100px;
+    padding: 0%;
+    margin: 0%;
+    border: 0px;
+}
+#secondarystats {
+    margin-left: 16px;
+}
