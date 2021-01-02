@@ -1,0 +1,223 @@
+fields:
+  notes1:
+    label: notes1
+    input: text
+    rows: 5  
+  notes2:
+    label: notes2
+    input: text
+    rows: 5
+  bondstext:
+    label: bondstext
+    input: text
+    rows: 1
+  bondsprogressbar:
+    label: bondsprogressbar
+    input: integer
+  tickb:
+    label: tickb
+    input: integer
+  edge:
+    label: edge
+    input: integer
+  heart:
+    label: heart
+    input: integer
+  iron:
+    label: iron
+    input: integer
+  shadow:
+    label: shadow
+    input: integer
+  wits:
+    label: wits
+    input: integer
+  momentum:
+    label: momentum
+    input: integer
+  health:
+    label: health
+    input: integer
+  spirit:
+    label: spirit
+    input: integer
+  supply:
+    label: supply
+    input: integer
+  xp:
+    label: xp
+    input: integer
+  wounded:
+    label: wounded
+    input: checkbox
+  shaken:
+    label: shaken
+    input: checkbox
+  unprepared:
+    label: unprepared
+    input: checkbox
+  encumbered:
+    label: encumbered
+    input: checkbox
+  maimed:
+    label: maimed
+    input: checkbox
+  corrupted:
+    label: corrupted
+    input: checkbox
+  cursed:
+    label: cursed
+    input: checkbox
+  tormented:
+    label: tormented
+    input: checkbox
+  vow1:
+    label: vow1
+    input: string
+  vow2:
+    label: vow2
+    input: string
+  vow3:
+    label: vow3
+    input: string
+  vow4:
+    label: vow4
+    input: string
+  vow5:
+    label: vow5
+    input: string
+  vow6:
+    label: vow6
+    input: string
+  menace1:
+    label: menace1
+    input: string
+  menace2: 
+    label: menace2
+    input: string
+  menace3:
+    label: menace3
+    input: string
+  menace4:
+    label: menace4
+    input: string
+  menace5:
+    label: menace5
+    input: string
+  menace6:
+    label: menace6
+    input: string
+  rank1:
+    label: rank1
+    input: selection
+    options:
+      troublesome: troublesome
+      dangerous: dangerous
+      formidable: formidable
+      extreme: extreme
+      epic: epic
+  rank2:
+    label: rank2
+    input: selection
+    options:
+      troublesome: troublesome
+      dangerous: dangerous
+      formidable: formidable
+      extreme: extreme
+      epic: epic
+  rank3:
+    label: rank3
+    input: selection
+    options:
+      troublesome: troublesome
+      dangerous: dangerous
+      formidable: formidable
+      extreme: extreme
+      epic: epic
+  rank4:
+    label: rank4
+    input: selection
+    options:
+      troublesome: troublesome
+      dangerous: dangerous
+      formidable: formidable
+      extreme: extreme
+      epic: epic
+  rank5:
+    label: rank5
+    input: selection
+    options:
+      troublesome: troublesome
+      dangerous: dangerous
+      formidable: formidable
+      extreme: extreme
+      epic: epic
+  rank6:
+    label: rank6
+    input: selection
+    options:
+      troublesome: troublesome
+      dangerous: dangerous
+      formidable: formidable
+      extreme: extreme
+      epic: epic
+  threat1:
+    label: threat1
+    input: integer
+  threat2:
+    label: threat2
+    input: integer
+  threat3:
+    label: threat3
+    input: integer
+  threat4:
+    label: threat4
+    input: integer
+  threat5:
+    label: threat5
+    input: integer
+  threat6:
+    label: threat6
+    input: integer
+  progress1:
+    label: progress1
+    input: integer
+  progress2:
+    label: progress2
+    input: integer
+  progress3:
+    label: progress3
+    input: integer
+  progress4:
+    label: progress4
+    input: integer
+  progress5:
+    label: progress5
+    input: integer
+  progress6:
+    label: progress6
+    input: integer
+  tick1:
+    label: tick1
+    input: integer
+  tick2:
+    label: tick2
+    input: integer
+  tick3:
+    label: tick3
+    input: integer
+  tick4:
+    label: tick4
+    input: integer
+  tick5:
+    label: tick5
+    input: integer
+  tick6:
+    label: tick6
+    input:
+  progressf:
+    label: progressf
+    input: integer
+  tickf:
+    label: tickf
+    input: integer
