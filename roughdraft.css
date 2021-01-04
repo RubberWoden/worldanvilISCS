@@ -5,6 +5,9 @@ Can use normal html color names such as DarkGrey, DimGrey, Gainsboro, LightGrey,
 * {
     font-family: 'Yanone Kaffeesatz';
 }
+.sheet {
+    background: url(https://i.pinimg.com/originals/a1/4e/3d/a14e3dffde5ab33734469ac4b7f84336.jpg);
+}
 body {
     background-color: dimgray;
 }
@@ -16,12 +19,14 @@ body {
 }
 .card {
     border-style: ridge;
-    border-width: 0px;
+    border-width: 4px;
+    border-color: black;
     background-color: lightgray;
-    margin: 1px;
+    margin: 0px;
     margin-top: 2px;
-    padding: 1px;
+    padding: 0px;
     font-size: x-small;
+    box-shadow: 2px 2px 5px black;
 }
 .jumbotron {
     background-color: black;
@@ -38,4 +43,23 @@ h1 {
 }
 #secondarystats {
     margin-left: 16px;
+}
+.card-title {
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    padding: 0px;
+    margin: 1px;
+    border: 0px;
+}
+h2 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 1px;
+    margin: 1px;
+    margin-top: 3px;
+    border: 1px;
+    box-shadow: 2px 2px 5px black;
+
 }
