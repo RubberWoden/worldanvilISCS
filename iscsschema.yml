@@ -1,8 +1,4 @@
 fields:
-  namesandbonds:
-    input: text
-    label: "namesandbonds"
-    rows: 10
   iron:
     input: integer
     label: "iron"
@@ -15,6 +11,19 @@ fields:
   heart:
     input: integer
     label: "heart"
+  wits:
+    input: integer
+    label: "wits"
+  namesandbonds:
+    input: text
+    label: "namesandbonds"
+    rows: 10
+  bondstick:
+    input: integer
+    label: "bondstick"
+  bondsprogress:
+    input: integer
+    label: "bondsprogress"
   momentum:
     input: integer
     label: "momentum"
@@ -39,133 +48,123 @@ fields:
   failureprogress:
     input: integer
     label: "failureprogress"
-  bondstick:
-    input: integer
-    label: "bondstick"
-  bondsprogress:
-    input: integer
-    label: "bondsprogress"
-  notesandbonds:
-    input: text
-    label: "notesandbonds"
-    rows: 10
-  menace0:
-    Input: integer
-    label: "menace0"
-  menace1:
-    Input: integer
-    label: "menace1"
-  menace2:
-    Input: integer
-    label: "menace2"
-  menace3:
-    Input: integer
-    label: "menace3"
-  menace4:
-    Input: integer
-    label: "menace4"
-  menace5:
-    Input: integer
-    label: "menace5"
-  menace6:
-    Input: integer
-    label: "menace6"
-  menace7:
-    Input: integer
-    label: "menace7"
-  menace8:
-    Input: integer
-    label: "menace8"
-  menace9:
-    Input: integer
-    label: "menace9"
-  progress8:
-    Input: integer
-    label: "progress8"
-  progress9:
-    Input: integer
-    label: "progress9"
-  progress0:
-    Input: integer
-    label: "progress0"
-  progress1:
-    Input: integer
-    label: "progress1"
-  progress2:
-    Input: integer
-    label: "progress2"
-  progress3:
-    Input: integer
-    label: "progress3"
-  progress4:
-    Input: integer
-    label: "progress4"
-  progress5:
-    Input: integer
-    label: "progress5"
-  progress6:
-    Input: integer
-    label: "progress6"
-  progress7:
-    Input: integer
-    label: "progress7"
-  tick0:
-    Input: integer
-    label: "tick0"
-  tick1:
-    Input: integer
-    label: "tick1"
-  tick2:
-    Input: integer
-    label: "tick2"
-  tick3:
-    Input: integer
-    label: "tick3"
-  tick4:
-    Input: integer
-    label: "tick4"
-  tick5:
-    Input: integer
-    label: "tick5"
-  tick6:
-    Input: integer
-    label: "tick6"
-  tick7:
-    Input: integer
-    label: "tick7"
-  tick8:
-    Input: integer
-    label: "tick8"
-  tick9:
-    Input: integer
-    label: "tick9"
   vow0:
     input: string
     label: "vow0"
+  tick0:
+    Input: integer
+    label: "tick0"
+  progress0:
+    Input: integer
+    label: "progress0"
+  menace0:
+    Input: integer
+    label: "menace0"
   vow1:
     input: string
     label: "vow1"
+  tick1:
+    Input: integer
+    label: "tick1"
+  progress1:
+    Input: integer
+    label: "progress1"
+  menace1:
+    Input: integer
+    label: "menace1"
   vow2:
     input: string
     label: "vow2"
+  tick2:
+    Input: integer
+    label: "tick2"
+  progress2:
+    Input: integer
+    label: "progress2"
+  menace2:
+    Input: integer
+    label: "menace2"
   vow3:
     input: string
     label: "vow3"
+  tick3:
+    Input: integer
+    label: "tick3"
+  progress3:
+    Input: integer
+    label: "progress3"
+  menace3:
+    Input: integer
+    label: "menace3"
   vow4:
     input: string
     label: "vow4"
+  tick4:
+    Input: integer
+    label: "tick4"
+  progress4:
+    Input: integer
+    label: "progress4"
+  menace4:
+    Input: integer
+    label: "menace4"
   vow5:
     input: string
     label: "vow5"
+  tick5:
+    Input: integer
+    label: "tick5"
+  progress5:
+    Input: integer
+    label: "progress5"
+  menace5:
+    Input: integer
+    label: "menace5"
   vow6:
     input: string
     label: "vow6"
+  tick6:
+    Input: integer
+    label: "tick6"
+  progress6:
+    Input: integer
+    label: "progress6"
+  menace6:
+    Input: integer
+    label: "menace6"
   vow7:
     input: string
     label: "vow7"
+  tick7:
+    Input: integer
+    label: "tick7"
+  progress7:
+    Input: integer
+    label: "progress7"
+  menace7:
+    Input: integer
+    label: "menace7"
   vow8:
     input: string
     label: "vow8"
+  tick8:
+    Input: integer
+    label: "tick8"
+  progress8:
+    Input: integer
+    label: "progress8"
+  menace8:
+    Input: integer
+    label: "menace8"
   vow9:
     input: string
     label: "vow9"
+  tick9:
+    Input: integer
+    label: "tick9"
+  progress9:
+    Input: integer
+    label: "progress9"
+  menace9:
+    Input: integer
+    label: "menace9"

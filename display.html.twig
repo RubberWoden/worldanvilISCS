@@ -34,7 +34,6 @@
                         <div class="card-body">
                             <h1>{{ variables.name }}</h1>
                             {% if variables.name is defined %}
-                                    <dt>Name</dt>
                                 <dd> {{ variables.name}} </dd>
                             {% endif %}
                         </div>
@@ -51,7 +50,6 @@
                         </div>
                         <div class="card-body">
                             {% if variables.iron is defined %}
-                                <dt>iron</dt>
                             <dd> {{ variables.iron}} </dd>
                             {% endif %}
                         </div>
@@ -65,7 +63,6 @@
                         </div>
                         <div class="card-body">
                             {% if variables.edge is defined %}
-                                <dt>edge</dt>
                             <dd> {{ variables.edge}} </dd>
                             {% endif %}
                         </div>
@@ -79,7 +76,6 @@
                         </div>
                         <div class="card-body">
                             {% if variables.shadow is defined %}
-                                <dt>shadow</dt>
                             <dd> {{ variables.shadow}} </dd>
                             {% endif %}
                         </div>
@@ -93,7 +89,6 @@
                         </div>
                         <div class="card-body">
                             {% if variables.heart is defined %}
-                                <dt>heart</dt>
                             <dd> {{ variables.heart}} </dd>
                             {% endif %}
                         </div>
@@ -107,7 +102,6 @@
                         </div>
                         <div class="card-body">
                             {% if variables.wits is defined %}
-                                <dt>wits</dt>
                             <dd> {{ variables.wits}} </dd>
                             {% endif %}
                         </div>
@@ -119,11 +113,10 @@
         <div class="col-md-4">
             <div class="card">
                 <div class="card-title text-center">
-                    Notes & Bonds
+                    Notes and Bonds
                 </div>
                 <div class="card-body">
                     {% if variables.namesandbonds is defined %}
-                        <dt>namesandbonds</dt>
                     <dd> {{ variables.namesandbonds}} </dd>
                     {% endif %}
                 </div>
@@ -140,7 +133,6 @@
                 </div>
                 <div class="card-body">
                     {% if variables.momentum is defined %}
-                        <dt>momentum</dt>
                     <dd> {{ variables.momentum}} </dd>
                     {% endif %}
                 </div>
@@ -154,7 +146,6 @@
                 </div>
                 <div class="card-body">
                     {% if variables.supply is defined %}
-                        <dt>supply</dt>
                     <dd> {{ variables.supply}} </dd>
                     {% endif %}
                 </div>
@@ -168,7 +159,6 @@
                 </div>
                 <div class="card-body">
                     {% if variables.spirit is defined %}
-                        <dt>spirit</dt>
                     <dd> {{ variables.spirit}} </dd>
                     {% endif %}
                 </div>
@@ -182,7 +172,6 @@
                 </div>
                 <div class="card-body">
                     {% if variables.health is defined %}
-                    <dt>health</dt>
                 <dd> {{ variables.health}} </dd>
                 {% endif %}
                 </div>
@@ -196,13 +185,13 @@
                 </div>
                 <div class="card-body">
                     {% if variables.bondstick is defined %}
-                    <dt>bondstick</dt>
-                <dd> {{ variables.bondstick}} </dd>
-                {% endif %}
-                {% if variables.bondsprogress is defined %}
-                <dt>bondsprogress</dt>
-            <dd> {{ variables.bondsprogress}} </dd>
-            {% endif %}
+                        <dt>Ticks</dt>
+                        <dd> {{ variables.bondstick}} </dd>
+                    {% endif %}
+                    {% if variables.bondsprogress is defined %}
+                        <dt>Progress</dt>
+                        <dd> {{ variables.bondsprogress}} </dd>
+                    {% endif %}
                 </div>
             </div>
         </div>
@@ -214,13 +203,13 @@
                 </div>
                 <div class="card-body">
                     {% if variables.failuretick is defined %}
-                    <dt>failuretick</dt>
-                <dd> {{ variables.failuretick}} </dd>
-                {% endif %}
-            {% if variables.failureprogress is defined %}
-                    <dt>failureprogress</dt>
-                <dd> {{ variables.failureprogress}} </dd>
-                {% endif %}
+                            <dt>Ticks</dt>
+                        <dd> {{ variables.failuretick}} </dd>
+                    {% endif %}
+                    {% if variables.failureprogress is defined %}
+                            <dt>Progress</dt>
+                        <dd> {{ variables.failureprogress}} </dd>
+                    {% endif %}
                 </div>
             </div>
         </div>
@@ -232,13 +221,13 @@
                 </div>
                 <div class="card-body">
                     {% if variables.xpgain is defined %}
-                    <dt>xpgain</dt>
-                <dd> {{ variables.xpgain}} </dd>
-                {% endif %}
-            {% if variables.xpleft is defined %}
-                    <dt>xpleft</dt>
-                <dd> {{ variables.xpleft}} </dd>
-                {% endif %}
+                            <dt>Total</dt>
+                        <dd> {{ variables.xpgain}} </dd>
+                    {% endif %}
+                    {% if variables.xpleft is defined %}
+                            <dt>Unused</dt>
+                        <dd> {{ variables.xpleft}} </dd>
+                    {% endif %}
                 </div>
             </div>
         </div>
@@ -267,23 +256,22 @@ Ten such cards should be sufficient for most players.
                     <div class="card">
                         <div class="card-title text-center">
                             {% if variables.vow0 is defined %}
-                            <dt>vow0</dt>
-                        <dd> {{ variables.vow0}} </dd>
-                        {% endif %}
+                            <dd> {{ variables.vow0}} </dd>
+                            {% endif %}
                         </div>
                         <div class="card-body">
                             {% if variables.tick0 is defined %}
-                            <dt>tick0</dt>
-                        <dd> {{ variables.tick0}} </dd>
-                        {% endif %}
+                                <dt>Ticks</dt>
+                                <dd> {{ variables.tick0}} </dd>
+                            {% endif %}
                             {% if variables.progress0 is defined %}
-                            <dt>progress0</dt>
-                        <dd> {{ variables.progress0}} </dd>
-                        {% endif %}
+                                <dt>Progress</dt>
+                                <dd> {{ variables.progress0}} </dd>
+                            {% endif %}
                             {% if variables.menace0 is defined %}
-                            <dt>menace0</dt>
-                        <dd> {{ variables.menace0}} </dd>
-                        {% endif %}
+                                <dt>Menace</dt>
+                                <dd> {{ variables.menace0}} </dd>
+                            {% endif %}
                 
                         </div>
                     </div>
@@ -295,23 +283,22 @@ Ten such cards should be sufficient for most players.
                     <div class="card">
                         <div class="card-title text-center">
                             {% if variables.vow1 is defined %}
-                            <dt>vow1</dt>
-                        <dd> {{ variables.vow1}} </dd>
-                        {% endif %}
+                                <dd> {{ variables.vow1}} </dd>
+                            {% endif %}
                         </div>
                         <div class="card-body">
                             {% if variables.tick1 is defined %}
-                            <dt>tick1</dt>
-                        <dd> {{ variables.tick1}} </dd>
-                        {% endif %}
-                        {% if variables.progress1 is defined %}
-                        <dt>progress1</dt>
-                    <dd> {{ variables.progress1}} </dd>
-                    {% endif %}
-                    {% if variables.menace1 is defined %}
-                    <dt>menace1</dt>
-                <dd> {{ variables.menace1}} </dd>
-                {% endif %}
+                                <dt>Ticks</dt>
+                            <dd> {{ variables.tick1}} </dd>
+                            {% endif %}
+                            {% if variables.progress1 is defined %}
+                                <dt>Progress</dt>
+                                <dd> {{ variables.progress1}} </dd>
+                            {% endif %}
+                            {% if variables.menace1 is defined %}
+                                <dt>Menace</dt>
+                                <dd> {{ variables.menace1}} </dd>
+                            {% endif %}
                         </div>
                     </div>
                 </div>
@@ -331,17 +318,17 @@ Ten such cards should be sufficient for most players.
                         </div>
                         <div class="card-body">
                             {% if variables.tick2 is defined %}
-                            <dt>tick2</dt>
-                        <dd> {{ variables.tick2}} </dd>
-                        {% endif %}
+                                <dt>Ticks</dt>
+                                <dd> {{ variables.tick2}} </dd>
+                            {% endif %}
                             {% if variables.progress2 is defined %}
-                            <dt>progress2</dt>
-                        <dd> {{ variables.progress2}} </dd>
-                        {% endif %}
+                                <dt>Progress</dt>
+                                <dd> {{ variables.progress2}} </dd>
+                            {% endif %}
                             {% if variables.menace1 is defined %}
-                            <dt>menace1</dt>
-                        <dd> {{ variables.menace1}} </dd>
-                        {% endif %}
+                                <dt>Menace</dt>
+                                <dd> {{ variables.menace1}} </dd>
+                            {% endif %}
                         </div>
                     </div>
                 </div>
@@ -352,23 +339,22 @@ Ten such cards should be sufficient for most players.
                     <div class="card">
                         <div class="card-title text-center">
                             {% if variables.vow3 is defined %}
-                            <dt>vow3</dt>
-                        <dd> {{ variables.vow3}} </dd>
-                        {% endif %}
+                                <dd> {{ variables.vow3}} </dd>
+                            {% endif %}
                         </div>
                         <div class="card-body">
-                            {% if variables.progress3 is defined %}
-                            <dt>progress3</dt>
-                        <dd> {{ variables.progress3}} </dd>
-                        {% endif %}
                             {% if variables.tick3 is defined %}
-                            <dt>tick3</dt>
-                        <dd> {{ variables.tick3}} </dd>
-                        {% endif %}
-                        {% if variables.menace3 is defined %}
-                        <dt>menace3</dt>
-                    <dd> {{ variables.menace3}} </dd>
-                    {% endif %}
+                                <dt>Tick</dt>
+                                <dd> {{ variables.tick3}} </dd>
+                            {% endif %}
+                            {% if variables.progress3 is defined %}
+                                <dt>Progress</dt>
+                                <dd> {{ variables.progress3}} </dd>
+                            {% endif %}
+                            {% if variables.menace3 is defined %}
+                                <dt>Menace</dt>
+                                <dd> {{ variables.menace3}} </dd>
+                            {% endif %}
                         </div>
                     </div>
                 </div>
@@ -382,23 +368,22 @@ Ten such cards should be sufficient for most players.
                     <div class="card">
                         <div class="card-title text-center">
                             {% if variables.vow4 is defined %}
-                            <dt>vow4</dt>
-                        <dd> {{ variables.vow4}} </dd>
-                        {% endif %}
+                                <dd> {{ variables.vow4}} </dd>
+                            {% endif %}
                         </div>
                         <div class="card-body">
                             {% if variables.tick4 is defined %}
-                            <dt>tick4</dt>
-                        <dd> {{ variables.tick4}} </dd>
-                        {% endif %}
+                                <dt>Ticks</dt>
+                                <dd> {{ variables.tick4}} </dd>
+                            {% endif %}
                             {% if variables.progress4 is defined %}
-                            <dt>progress4</dt>
-                        <dd> {{ variables.progress4}} </dd>
-                        {% endif %}
+                                <dt>Progress</dt>
+                                <dd> {{ variables.progress4}} </dd>
+                            {% endif %}
                             {% if variables.menace4 is defined %}
-                            <dt>menace4</dt>
-                        <dd> {{ variables.menace4}} </dd>
-                        {% endif %}
+                                <dt>Menace</dt>
+                                <dd> {{ variables.menace4}} </dd>
+                            {% endif %}
                         </div>
                     </div>
                 </div>
@@ -409,23 +394,22 @@ Ten such cards should be sufficient for most players.
                     <div class="card">
                         <div class="card-title text-center">
                             {% if variables.vow5 is defined %}
-                            <dt>vow5</dt>
-                        <dd> {{ variables.vow5}} </dd>
-                        {% endif %}
+                                <dd> {{ variables.vow5}} </dd>
+                            {% endif %}
                         </div>
                         <div class="card-body">
-                            {% if variables.menace5 is defined %}
-                            <dt>menace5</dt>
-                        <dd> {{ variables.menace5}} </dd>
-                        {% endif %}
-                            {% if variables.progress5 is defined %}
-                            <dt>progress5</dt>
-                        <dd> {{ variables.progress5}} </dd>
-                        {% endif %}
                             {% if variables.tick5 is defined %}
-                            <dt>tick5</dt>
-                        <dd> {{ variables.tick5}} </dd>
-                        {% endif %}
+                                <dt>Tick</dt>
+                                <dd> {{ variables.tick5}} </dd>
+                            {% endif %}
+                            {% if variables.progress5 is defined %}
+                                <dt>Progress</dt>
+                                <dd> {{ variables.progress5}} </dd>
+                            {% endif %}
+                            {% if variables.menace5 is defined %}
+                                <dt>Menace</dt>
+                                <dd> {{ variables.menace5}} </dd>
+                            {% endif %}
                         </div>
                     </div>
                 </div>
@@ -439,23 +423,22 @@ Ten such cards should be sufficient for most players.
                     <div class="card">
                         <div class="card-title text-center">
                             {% if variables.vow6 is defined %}
-                            <dt>vow6</dt>
-                        <dd> {{ variables.vow6}} </dd>
-                        {% endif %}
+                                <dd> {{ variables.vow6}} </dd>
+                            {% endif %}
                         </div>
                         <div class="card-body">
                             {% if variables.tick6 is defined %}
-                            <dt>tick6</dt>
-                        <dd> {{ variables.tick6}} </dd>
-                        {% endif %}
+                                <dt>Ticks</dt>
+                                <dd> {{ variables.tick6}} </dd>
+                            {% endif %}
                             {% if variables.progress6 is defined %}
-                            <dt>progress6</dt>
-                        <dd> {{ variables.progress6}} </dd>
-                        {% endif %}
+                                <dt>Progress</dt>
+                                <dd> {{ variables.progress6}} </dd>
+                            {% endif %}
                             {% if variables.menace6 is defined %}
-                            <dt>menace6</dt>
-                        <dd> {{ variables.menace6}} </dd>
-                        {% endif %}
+                                <dt>Menace</dt>
+                                <dd> {{ variables.menace6}} </dd>
+                            {% endif %}
                         </div>
                     </div>
                 </div>
@@ -466,23 +449,22 @@ Ten such cards should be sufficient for most players.
                     <div class="card">
                         <div class="card-title text-center">
                             {% if variables.vow7 is defined %}
-                            <dt>vow7</dt>
-                        <dd> {{ variables.vow7}} </dd>
-                        {% endif %}
+                                <dd> {{ variables.vow7}} </dd>
+                            {% endif %}
                         </div>
                         <div class="card-body">
-                            {% if variables.menace7 is defined %}
-                            <dt>menace7</dt>
-                        <dd> {{ variables.menace7}} </dd>
-                        {% endif %}
-                            {% if variables.progress7 is defined %}
-                            <dt>progress7</dt>
-                        <dd> {{ variables.progress7}} </dd>
-                        {% endif %}
                             {% if variables.tick7 is defined %}
-                            <dt>tick7</dt>
-                        <dd> {{ variables.tick7}} </dd>
-                        {% endif %}
+                                <dt>Tick</dt>
+                                <dd> {{ variables.tick7}} </dd>
+                            {% endif %}
+                            {% if variables.progress7 is defined %}
+                                <dt>Progress</dt>
+                                <dd> {{ variables.progress7}} </dd>
+                            {% endif %}
+                            {% if variables.menace7 is defined %}
+                                <dt>Menace</dt>
+                                <dd> {{ variables.menace7}} </dd>
+                            {% endif %}
                         </div>
                     </div>
                 </div>
@@ -496,23 +478,22 @@ Ten such cards should be sufficient for most players.
                     <div class="card">
                         <div class="card-title text-center">
                             {% if variables.vow8 is defined %}
-                            <dt>vow8</dt>
-                        <dd> {{ variables.vow8}} </dd>
-                        {% endif %}
+                                <dd> {{ variables.vow8}} </dd>
+                            {% endif %}
                         </div>
                         <div class="card-body">
-                            {% if variables.menace8 is defined %}
-                            <dt>menace8</dt>
-                        <dd> {{ variables.menace8}} </dd>
-                        {% endif %}
-                            {% if variables.progress8 is defined %}
-                            <dt>progress8</dt>
-                        <dd> {{ variables.progress8}} </dd>
-                        {% endif %}
                             {% if variables.tick8 is defined %}
-                            <dt>tick8</dt>
-                        <dd> {{ variables.tick8}} </dd>
-                        {% endif %}
+                                <dt>Tick</dt>
+                                <dd> {{ variables.tick8}} </dd>
+                            {% endif %}
+                            {% if variables.progress8 is defined %}
+                                <dt>Progress</dt>
+                                <dd> {{ variables.progress8}} </dd>
+                            {% endif %}
+                            {% if variables.menace8 is defined %}
+                                <dt>Menace</dt>
+                                <dd> {{ variables.menace8}} </dd>
+                            {% endif %}
                         </div>
                     </div>
                 </div>
@@ -523,23 +504,22 @@ Ten such cards should be sufficient for most players.
                     <div class="card">
                         <div class="card-title text-center">
                             {% if variables.vow9 is defined %}
-                            <dt>vow9</dt>
-                        <dd> {{ variables.vow9}} </dd>
-                        {% endif %}
+                                <dd> {{ variables.vow9}} </dd>
+                            {% endif %}
                         </div>
                         <div class="card-body">
+                            {% if variables.tick9 is defined %}
+                                <dt>Tick</dt>
+                                <dd> {{ variables.tick9}} </dd>
+                            {% endif %}
+                            {% if variables.progress9 is defined %}
+                                <dt>Progress</dt>
+                                <dd> {{ variables.progress9}} </dd>
+                            {% endif %}
                             {% if variables.menace9 is defined %}
-                            <dt>menace9</dt>
-                        <dd> {{ variables.menace9}} </dd>
-                        {% endif %}
-                    {% if variables.progress9 is defined %}
-                            <dt>progress9</dt>
-                        <dd> {{ variables.progress9}} </dd>
-                        {% endif %}
-                    {% if variables.tick9 is defined %}
-                            <dt>tick9</dt>
-                        <dd> {{ variables.tick9}} </dd>
-                        {% endif %}
+                                <dt>Menace</dt>
+                                <dd> {{ variables.menace9}} </dd>
+                            {% endif %}
                         </div>
                     </div>
                 </div>
