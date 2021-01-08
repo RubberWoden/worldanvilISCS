@@ -14,9 +14,9 @@ fields:
   wits:
     input: integer
     label: "wits"
-  namesandbonds:
+  bonds:
     input: text
-    label: "namesandbonds"
+    label: "bonds"
     rows: 10
   bondstick:
     input: integer
@@ -36,12 +36,12 @@ fields:
   spirit:
     input: integer
     label: "spirit"
-  xpgain:
+  xptotal:
     input: integer
-    label: "xpgain"
-  xpleft:
+    label:  xptotal"
+  xpused:
     input: integer
-    label: "xpleft"
+    label: "xpused"
   failuretick:
     input: integer
     label: "failuretick"
