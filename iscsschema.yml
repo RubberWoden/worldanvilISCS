@@ -48,21 +48,42 @@ fields:
   failureprogress:
     input: integer
     label: "failureprogress"
-  vow0:
-    input: string
-    label: "vow0"
-  tick0:
-    Input: integer
-    label: "tick0"
-  progress0:
-    Input: integer
-    label: "progress0"
-  menace0:
-    Input: integer
-    label: "menace0"
+  wounded:
+    input: checkbox
+    label: wounded
+  unprepared:
+    input: checkbox
+    label: unprepared
+  shaken:
+    input: checkbox
+    label: shaken
+  encumbered:
+    input: checkbox
+    label: encumbered
+  maimed:
+    input: checkbox
+    label: maimed
+  corrupted:
+    input: checkbox
+    label: corrupted
+  cursed:
+    input: checkbox
+    label: cursed
+  tormented:
+    input: checkbox
+    label: tormented
   vow1:
     input: string
     label: "vow1"
+  rank1:
+    input: select
+    label: rank1
+    options:
+      troublesome: troublesome
+      dangerous: dangerous
+      formidable: formidable
+      extreme: extreme
+      epic: epic
   tick1:
     Input: integer
     label: "tick1"
@@ -75,6 +96,15 @@ fields:
   vow2:
     input: string
     label: "vow2"
+  rank2:
+    input: select
+    label: rank2
+    options:
+      troublesome: troublesome
+      dangerous: dangerous
+      formidable: formidable
+      extreme: extreme
+      epic: epic
   tick2:
     Input: integer
     label: "tick2"
@@ -87,6 +117,15 @@ fields:
   vow3:
     input: string
     label: "vow3"
+  rank3:
+    input: select
+    label: rank3
+    options:
+      troublesome: troublesome
+      dangerous: dangerous
+      formidable: formidable
+      extreme: extreme
+      epic: epic
   tick3:
     Input: integer
     label: "tick3"
@@ -99,6 +138,15 @@ fields:
   vow4:
     input: string
     label: "vow4"
+  rank4:
+    input: select
+    label: rank4
+    options:
+      troublesome: troublesome
+      dangerous: dangerous
+      formidable: formidable
+      extreme: extreme
+      epic: epic
   tick4:
     Input: integer
     label: "tick4"
@@ -111,6 +159,15 @@ fields:
   vow5:
     input: string
     label: "vow5"
+  rank5:
+    input: select
+    label: rank5
+    options:
+      troublesome: troublesome
+      dangerous: dangerous
+      formidable: formidable
+      extreme: extreme
+      epic: epic
   tick5:
     Input: integer
     label: "tick5"
@@ -123,6 +180,15 @@ fields:
   vow6:
     input: string
     label: "vow6"
+  rank6:
+    input: select
+    label: rank6
+    options:
+      troublesome: troublesome
+      dangerous: dangerous
+      formidable: formidable
+      extreme: extreme
+      epic: epic
   tick6:
     Input: integer
     label: "tick6"
@@ -135,6 +201,15 @@ fields:
   vow7:
     input: string
     label: "vow7"
+  rank7:
+    input: select
+    label: rank7
+    options:
+      troublesome: troublesome
+      dangerous: dangerous
+      formidable: formidable
+      extreme: extreme
+      epic: epic
   tick7:
     Input: integer
     label: "tick7"
@@ -147,6 +222,15 @@ fields:
   vow8:
     input: string
     label: "vow8"
+  rank8:
+    input: select
+    label: rank8
+    options:
+      troublesome: troublesome
+      dangerous: dangerous
+      formidable: formidable
+      extreme: extreme
+      epic: epic
   tick8:
     Input: integer
     label: "tick8"
@@ -159,12 +243,3 @@ fields:
   vow9:
     input: string
     label: "vow9"
-  tick9:
-    Input: integer
-    label: "tick9"
-  progress9:
-    Input: integer
-    label: "progress9"
-  menace9:
-    Input: integer
-    label: "menace9"

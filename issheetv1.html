@@ -8,98 +8,161 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="roughdraft.css">
   </head>
-  <body>
+
       
     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-<div class="container" id="sheet">
-<!--first section[name][xp][failure][bonds]-->
-    <div class="d-inline-flex flex-row flex-wrap">
-      <div class="d-inline-flex flex-column flex-wrap col-12 col-md-8">
-        <div class="d-inline-flex flex-row flex-wrap">
-          <!--name-->
-          <div class="d-inline-flex flex-column flex-wrap col-12 col-sm-6 col-md-3">
-          </div>
-          <!--xp-->
-          <div class="d-inline-flex flex-column flex-wrap col-12 col-sm-6 col-md-3">
-          </div>
-          <!--failure-->
-          <div class="d-inline-flex flex-column flex-wrap col-12 col-sm-6 col-md-3">
-          </div>
-          <!--bond track-->
-          <div class="d-inline-flex flex-column flex-wrap col-12 col-sm-6 col-md-3">
-          </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>-->
+<body>
+    <!--sheet-->
+<div class="sheet">
+    <!--name/xp/failure/bond progress-->
+    <div class="row top">
+        <!--name-->
+        <div class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3 solidbox">
+            <h6>NAME</h6>
+            <p>test</p>
         </div>
-      </div>
-      <!--Bonds-->
-      <div class="d-inline-flex flex-column flex-wrap col-12 col-md-4">
-      </div>
-    </div>
-<!--Second section[stats]-->
-    <div class="d-flex flex-row flex-wrap">
-      <!--edge-->
-      <div class="d-flex flex-column flex-wrap col-12 col-md-2 col-md-offset-1">
-      </div>
-      <!--iron-->
-      <div class="d-flex flex-column flex-wrap col-12 col-md-2">
-      </div>
-      <!--heart-->
-      <div class="d-flex flex-column flex-wrap col-12 col-md-2">
-      </div>
-      <!--shadow-->
-      <div class="d-flex flex-column flex-wrap col-12 col-md-2">
-      </div>
-      <!--wits-->
-      <div class="d-flex flex-column flex-wrap col-12 col-md-2">
-      </div>
-    </div>
-    <div class="d-flex flex-row flex-wrap">
-      <!--momentum-->
-      <div class="d-flex flex-column col-12 col-md-3">
-      </div>
-      <!--supply-->
-      <div class="d-flex flex-column col-12 col-md-3">
-      </div>
-      <!--spirit-->
-      <div class="d-flex flex-column col-12 col-md-3">
-      </div>
-      <!--health-->
-      <div class="d-flex flex-column col-12 col-md-3">
-      </div>
-    </div>
-    <div class="d-flex flex-row flex-wrap">
-      <!--vows and progres-->
-      <div class="d-flex flex-column col-12 col-sm-6 col-md-4">
-        <div class="d-flex flex-row flex-wrap">
-          
+        <!--xp-->
+        <div class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3 solidbox">
+            <h6>XP</h6>
+            <p>test</p>
         </div>
-        <div class="d-flex flex-row flex-wrap">
-          
+        <!--failure-->
+        <div class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3 solidbox">
+            <h6>FAILURE</h6>
+            <p>test</p>
         </div>
-      </div>
-      <div class="d-flex flex-column col-12 col-sm-6 col-md-4">
-      </div>
-      <div class="d-flex flex-column col-12 col-sm-6 col-md-4">
-      </div>
-      <div class="d-flex flex-column col-12 col-sm-6 col-md-4">
-      </div>
-      <div class="d-flex flex-column col-12 col-sm-6 col-md-4">
-      </div>
-      <div class="d-flex flex-column col-12 col-sm-6 col-md-4">
-      </div>
-      <div class="d-flex flex-column col-12 col-sm-6 col-md-4">
-      </div>
-      <div class="d-flex flex-column col-12 col-sm-6 col-md-4">
-      </div>
-      <div class="d-flex flex-column col-12 col-sm-6 col-md-4">
-      </div>
+        <!--bond progress-->
+        <div class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3 solidbox">
+            <h6>BOND PROGRESS</h6>
+            <p>test</p>
+        </div>
+    </div>
+    <hr class="hr-dark">
+    <!--bonds and notes-->
+    <div class="row solidbox">
+        <div class="col-12">
+            <h6>Bonds & Notes</h6>
+        </div>
+        <div class="col-12">
+            <p>fuck me sideways</p>
+        </div>
+    </div>
+    <hr class="hr-dark">
+    <!--edge/heart/iron/shadow/wits-->
+    <div class="row">
+        <!--edge-->
+        <div class="col-12 col-xs-12 col-sm-6 col-md-2 col-lg-2 solidbox">
+            <h6>EDGE</h6>
+            <p>test</p>
+        </div>
+        <!--heart-->
+        <div class="col-12 col-xs-12 col-sm-6 col-md-2 col-lg-2 solidbox">
+            <h6>HEART</h6>
+            <p>test</p>
+        </div>
+        <!--iron-->
+        <div class="col-12 col-xs-12 col-sm-6 col-md-2 col-lg-2 solidbox">
+            <h6>IRON</h6>
+            <p>test</p>
+        </div>
+        <!--shadow-->
+        <div class="col-12 col-xs-12 col-sm-6 col-md-2 col-lg-2 solidbox">
+            <h6>SHADOW</h6>
+            <p>test</p>
+        </div>
+        <!--wits-->
+        <div class="col-12 col-xs-12 col-sm-6 col-md-2 col-lg-2 solidbox">
+            <h6>WITS</h6>
+            <p>test</p>
+        </div>
+        <div class="col-12 col-xs-12 col-sm-6 col-md-2 col-lg-2">
+            <img src="https://www.worldanvil.com/uploads/images/c37eb93ac6a83d7712127d48a9e4f1e9.png" alt="ironswornLogo" width="65%">
+        </div>
+    </div>
+    <hr class="hr-dark">
+    <!--Debilities-->
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 solidbox">
+            <p><strong>Wounded</strong></p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 solidbox">
+            <p><strong>Shaken</strong></p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 solidbox">
+            <p><strong>Unprepared</strong></p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 solidbox">
+            <p><strong>Encumbered</strong></p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 solidbox">
+            <p><strong>Maimed</strong></p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 solidbox">
+            <p><strong>Corrupted</strong></p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 solidbox">
+            <p><strong>Cursed</strong></p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 solidbox">
+            <p><strong>Tormented</strong></p>
+        </div>
+    </div>
+    <hr class="hr-dark">
+    <!--Progress-->
+    <div class="row">
+        <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 solidbox">
+            <h6>Progress | Vow</h6>
+            <p><strong>Title:</strong></p>
+            <p><strong>Ticks:</strong>  <strong> |Progress:</strong>  <strong> |Menace:</strong> </p>
+        </div>
+        <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 solidbox">
+            <h6>Progress | Vow</h6>
+            <p><strong>Title:</strong></p>
+            <p><strong>Ticks:</strong>  <strong> |Progress:</strong>  <strong> |Menace:</strong> </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 solidbox">
+            <h6>Progress | Vow</h6>
+            <p><strong>Title:</strong></p>
+            <p><strong>Ticks:</strong>  <strong> |Progress:</strong>  <strong> |Menace:</strong> </p>
+        </div>
+        <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 solidbox">
+            <h6>Progress | Vow</h6>
+            <p><strong>Title:</strong></p>
+            <p><strong>Ticks:</strong>  <strong> |Progress:</strong>  <strong> |Menace:</strong> </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 solidbox">
+            <h6>Progress | Vow</h6>
+            <p><strong>Title:</strong></p>
+            <p><strong>Ticks:</strong>  <strong> |Progress:</strong>  <strong> |Menace:</strong> </p>
+        </div>
+        <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 solidbox">
+            <h6>Progress | Vow</h6>
+            <p><strong>Title:</strong></p>
+            <p><strong>Ticks:</strong>  <strong> |Progress:</strong>  <strong> |Menace:</strong> </p>
+        </div>
+    </div>
+    <div class="row bottom">
+        <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 solidbox">
+            <h6>Progress | Vow</h6>
+            <p><strong>Title:</strong></p>
+            <p><strong>Ticks:</strong>  <strong> |Progress:</strong>  <strong> |Menace:</strong> </p>
+        </div>
+        <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 solidbox">
+            <h6>Progress | Vow</h6>
+            <p><strong>Title:</strong></p>
+            <p><strong>Ticks:</strong>  <strong> |Progress:</strong>  <strong> |Menace:</strong> </p>
+        </div>
     </div>
 </div>
-
-  </body>
+</body>
 </html>

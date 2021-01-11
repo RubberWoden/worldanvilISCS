@@ -1,65 +1,28 @@
-/*
-I would like to make the sheet grayscale. Can make others later.
-Can use normal html color names such as DarkGrey, DimGrey, Gainsboro, LightGrey, Silver, and WhiteSmoke.
-*/
-* {
-    font-family: 'Yanone Kaffeesatz';
+.solidbox {
+    border-style: outset !important;
+margin: auto;
+margin-top: 5px !important;
+margin-bottom: 5px !important;}
+ .sheet {
+max-width: 95%;
+margin: auto;}
+ {
+    background-image: url("https://www.worldanvil.com/uploads/images/6bd13ab1cce8c944d53ccdd4bf0c47d7.jpg") !important;
+    background-repeat: no-repeat !important;
+    background-size: 100% !important;
+    background-size: cover !important;
+    padding: 0px !important;
+    margin: 0px !important;}
+ .top {
+margin-top: 10px !important;}
+ .bottom{
+margin-bottom: 10px !important;}
+ h6,  p,  strong {
+margin: 2px !important;
+padding: 5px !important;
+color: white !important;
+background-color: black !important;
 }
-.sheet {
-    background: url(https://i.pinimg.com/originals/a1/4e/3d/a14e3dffde5ab33734469ac4b7f84336.jpg);
-}
-body {
-    background-color: dimgray;
-}
-.row {
-    margin: 1px;
-}
-.col {
-    margin: 1px;
-}
-.card {
-    border-style: ridge;
-    border-width: 4px;
-    border-color: black;
-    background-color: lightgray;
-    margin: 0px;
-    margin-top: 2px;
-    padding: 0px;
-    font-size: x-small;
-    box-shadow: 2px 2px 5px black;
-}
-.jumbotron {
-    background-color: black;
-    padding: 0%;
-    margin: 0%;
-    border: 0px;
-}
-h1 {
-    color: white;
-    font-size: 100px;
-    padding: 0%;
-    margin: 0%;
-    border: 0px;
-}
-#secondarystats {
-    margin-left: 16px;
-}
-.card-title {
-    background-color: black;
-    color: white;
-    text-transform: uppercase;
-    padding: 0px;
-    margin: 1px;
-    border: 0px;
-}
-h2 {
-    text-align: center;
-    background-color: black;
-    color: white;
-    padding: 1px;
-    margin: 1px;
-    margin-top: 3px;
-    border: 1px;
-    box-shadow: 2px 2px 5px black;
-
-}
+h6,  p,  strong::before {
+opacity: 0.7; !important}
+ 
