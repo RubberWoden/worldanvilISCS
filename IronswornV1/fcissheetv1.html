@@ -1,0 +1,218 @@
+<!--sheet-->
+<div class="sheet">
+    <!--name/xp/failure/bond progress-->
+    <div class="row top">
+        <!--name-->
+        <div class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3 solidbox">
+            <h6>NAME</h6>
+            <p><input  value="{{ variables.name is defined ? variables.name }}" required="required" class="form-control" id="name" name="name" placeholder="The name of the Ironsworn" type="text" /></p>
+        </div>
+        <!--xp-->
+        <div class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3 solidbox">
+            <h6>XP</h6>
+            <p><strong>Total: <input  value="{{ variables.xptotal is defined ? variables.xptotal }}"  class="form-control"  id="xptotal" name="xptotal" placeholder="0" type="number"   /></strong></p>
+            <p><strong>Used: <input  value="{{ variables.xpused is defined ? variables.xpused }}"  class="form-control"  id="xpused" name="xpused" placeholder="0" type="number"   /></strong></p>
+        </div>
+        <!--failure-->
+        <div class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3 solidbox">
+            <h6>FAILURE</h6>
+            <p><strong>Ticks: </strong><input  value="{{ variables.failuretick is defined ? variables.failuretick }}"  class="form-control"  id="failuretick" name="failuretick" placeholder="0" type="number"   /></p>
+            
+            <p><strong>Progress: </strong><input  value="{{ variables.failureprogress is defined ? variables.failureprogress }}"  class="form-control"  id="failureprogress" name="failureprogress" placeholder="0" type="number"   /></p>
+        </div>
+        <!--bond progress-->
+        <div class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3 solidbox">
+            <h6>BOND PROGRESS</h6>
+            <p><strong>Tick: </strong><input  value="{{ variables.bondstick is defined ? variables.bondstick }}"  class="form-control"  id="bondstick" name="bondstick" placeholder="0" type="number"   /></p>
+            <p><strong>Progress: </strong><input  value="{{ variables.bondsprogress is defined ? variables.bondsprogress }}"  class="form-control"  id="bondsprogress" name="bondsprogress" placeholder="0" type="number"   /></p>
+        </div>
+    </div>
+    <hr class="hr-dark">
+    <!--bonds and notes-->
+    <div class="row solidbox bondsbox">
+        <div class="col-2">
+            <h6>Bonds & Notes</h6>
+        </div>
+        <div class="col-12">
+            <p><textarea   class="form-control mention"  id="bondsnotes" name="bondsnotes" rows="10" placeholder="I'm so empty, like your soul.">{{ variables.bondsnotes is defined ? variables.bondsnotes }}</textarea></p>
+        </div>
+    </div>
+    <hr class="hr-dark">
+    <!--edge/heart/iron/shadow/wits-->
+    <div class="row">
+        <!--edge-->
+        <div class="col-12 col-xs-12 col-sm-6 col-md-2 col-lg-2 solidbox">
+            <h6>EDGE</h6>
+            <p><input  value="{{ variables.edge is defined ? variables.edge }}"  class="form-control"  id="edge" name="edge" placeholder="0" type="number"   /></p>
+        </div>
+        <!--heart-->
+        <div class="col-12 col-xs-12 col-sm-6 col-md-2 col-lg-2 solidbox">
+            <h6>HEART</h6>
+            <p><input  value="{{ variables.heart is defined ? variables.heart }}"  class="form-control"  id="heart" name="heart" placeholder="0" type="number"   /></p>
+        </div>
+        <!--iron-->
+        <div class="col-12 col-xs-12 col-sm-6 col-md-2 col-lg-2 solidbox">
+            <h6>IRON</h6>
+            <p><input  value="{{ variables.iron is defined ? variables.iron }}"  class="form-control"  id="iron" name="iron" placeholder="0" type="number"   /></p>
+        </div>
+        <!--shadow-->
+        <div class="col-12 col-xs-12 col-sm-6 col-md-2 col-lg-2 solidbox">
+            <h6>SHADOW</h6>
+            <p><input  value="{{ variables.shadow is defined ? variables.shadow }}"  class="form-control"  id="shadow" name="shadow" placeholder="0" type="number"   /></p>
+        </div>
+        <!--wits-->
+        <div class="col-12 col-xs-12 col-sm-6 col-md-2 col-lg-2 solidbox">
+            <h6>WITS</h6>
+            <p><input  value="{{ variables.wits is defined ? variables.wits }}"  class="form-control"  id="wits" name="wits" placeholder="0" type="number"   /></p>
+        </div>
+        <div class="col-12 col-xs-12 col-sm-6 col-md-2 col-lg-2">
+            <img src="https://www.worldanvil.com/uploads/images/c37eb93ac6a83d7712127d48a9e4f1e9.png" alt="ironswornLogo" width="65%" class="float-right">
+        </div>
+    </div>
+    <hr class="hr-dark">
+    <!--secondary stats-->
+    <div class="row">
+        <div class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3 solidbox">
+            <h6>Momentum</h6>
+            <p><input  value="{{ variables.momentum is defined ? variables.momentum }}"  class="form-control"  id="momentum" name="momentum" placeholder="" type="number"   /></p>
+        </div>
+        <div class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3 solidbox">
+            <h6>Supply</h6>
+            <p><input  value="{{ variables.supply is defined ? variables.supply }}"  class="form-control"  id="supply" name="supply" placeholder="" type="number"   /></p>
+        </div>
+        <div class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3 solidbox">
+            <h6>Health</h6>
+            <p><input  value="{{ variables.health is defined ? variables.health }}"  class="form-control"  id="health" name="health" placeholder="" type="number"   /></p>
+        </div>
+        <div class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3 solidbox">
+            <h6>Spirit</h6>
+            <p><input  value="{{ variables.spirit is defined ? variables.spirit }}"  class="form-control"  id="spirit" name="spirit" placeholder="" type="number"   /></p>
+        </div>
+    </div>
+    <hr class="hr-dark">
+    <!--Debilities-->
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 solidbox">
+            <p><input  value="1"  {% if variables.wounded is defined and variables.wounded == 1   %} checked="checked"{% endif %}   class="" id="wounded" name="wounded" placeholder="" type="checkbox" /><strong>Wounded</strong></p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 solidbox">
+            <p><input  value="1"  {% if variables.shaken is defined and variables.shaken == 1   %} checked="checked"{% endif %}   class="" id="shaken" name="shaken" placeholder="" type="checkbox" /><strong>Shaken</strong></p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 solidbox">
+            <p><input  value="1"  {% if variables.unprepared is defined and variables.unprepared == 1   %} checked="checked"{% endif %}   class="" id="unprepared" name="unprepared" placeholder="" type="checkbox" /><strong>Unprepared</strong></p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 solidbox">
+            <p><input  value="1"  {% if variables.encumbered is defined and variables.encumbered == 1   %} checked="checked"{% endif %}   class="" id="encumbered" name="encumbered" placeholder="" type="checkbox" /><strong>Encumbered</strong></p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 solidbox">
+            <p><input  value="1"  {% if variables.maimed is defined and variables.maimed == 1   %} checked="checked"{% endif %}   class="" id="maimed" name="maimed" placeholder="" type="checkbox" /><strong>Maimed</strong></p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 solidbox">
+            <p><input  value="1"  {% if variables.corrupted is defined and variables.corrupted == 1   %} checked="checked"{% endif %}   class="" id="corrupted" name="corrupted" placeholder="" type="checkbox" /><strong>Corrupted</strong></p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 solidbox">
+            <p><input  value="1"  {% if variables.cursed is defined and variables.cursed == 1   %} checked="checked"{% endif %}   class="" id="cursed" name="cursed" placeholder="" type="checkbox" /><strong>Cursed</strong></p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 solidbox">
+            <p><input  value="1"  {% if variables.tormented is defined and variables.tormented == 1   %} checked="checked"{% endif %}   class="" id="tormented" name="tormented" placeholder="" type="checkbox" /><strong>Tormented</strong></p>
+        </div>
+    </div>
+    <hr class="hr-dark">
+    <!--Progress-->
+    <div class="row">
+        <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 solidbox">
+            <h6>Progress | Vow</h6>
+            <p><strong>Title:</strong><input  value="{{ variables.vow1 is defined ? variables.vow1 }}"  class="form-control mention" id="vow1" name="vow1" placeholder="" type="text" /></p>
+            <p><strong>Rank:</strong> <select   class="form-control"  id="rank1" name="rank1">
+                <option value="troublesome" {% if variables.rank1 is defined and variables.rank1 == "troublesome"  %}selected="selected" {% endif %}  >troublesome</option>
+                <option value="dangerous" {% if variables.rank1 is defined and variables.rank1 == "dangerous"  %}selected="selected" {% endif %}  >dangerous</option>
+                <option value="formidable" {% if variables.rank1 is defined and variables.rank1 == "formidable"  %}selected="selected" {% endif %}  >formidable</option>
+                <option value="extreme" {% if variables.rank1 is defined and variables.rank1 == "extreme"  %}selected="selected" {% endif %}  >extreme</option>
+                <option value="epic" {% if variables.rank1 is defined and variables.rank1 == "epic"  %}selected="selected" {% endif %}  >epic</option>
+            </select> <strong>Ticks:</strong> <input  value="{{ variables.tick1 is defined ? variables.tick1 }}"  class="form-control mention" id="tick1" name="tick1" placeholder="" type="text" /> <strong> |Progress:</strong> <input  value="{{ variables.progress1 is defined ? variables.progress1 }}"  class="form-control mention" id="progress1" name="progress1" placeholder="" type="text" /> <strong> |Menace:</strong> <input  value="{{ variables.menace1 is defined ? variables.menace1 }}"  class="form-control mention" id="menace1" name="menace1" placeholder="" type="text" /></p>
+        </div>
+        <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 solidbox">
+            <h6>2 | Progress | Vow</h6>
+            <p><strong>Title:</strong><input  value="{{ variables.vow2 is defined ? variables.vow2 }}"  class="form-control mention" id="vow2" name="vow2" placeholder="" type="text" /></p>
+            <p><strong>Rank:</strong> <select   class="form-control"  id="rank2" name="rank2">
+                <option value="troublesome" {% if variables.rank2 is defined and variables.rank2 == "troublesome"  %}selected="selected" {% endif %}  >troublesome</option>
+                <option value="dangerous" {% if variables.rank2 is defined and variables.rank2 == "dangerous"  %}selected="selected" {% endif %}  >dangerous</option>
+                <option value="formidable" {% if variables.rank2 is defined and variables.rank2 == "formidable"  %}selected="selected" {% endif %}  >formidable</option>
+                <option value="extreme" {% if variables.rank2 is defined and variables.rank2 == "extreme"  %}selected="selected" {% endif %}  >extreme</option>
+                <option value="epic" {% if variables.rank2 is defined and variables.rank2 == "epic"  %}selected="selected" {% endif %}  >epic</option>
+            </select> <strong>Ticks:</strong> <input  value="{{ variables.tick2 is defined ? variables.tick2 }}"  class="form-control mention" id="tick2" name="tick2" placeholder="" type="text" /> <strong> |Progress:</strong> <input  value="{{ variables.progress2 is defined ? variables.progress2 }}"  class="form-control mention" id="progress2" name="progress2" placeholder="" type="text" /> <strong> |Menace:</strong> <input  value="{{ variables.menace2 is defined ? variables.menace2 }}"  class="form-control mention" id="menace2" name="menace2" placeholder="" type="text" /></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 solidbox">
+            <h6>3 | Progress | Vow</h6>
+            <p><strong>Title:</strong><input  value="{{ variables.vow3 is defined ? variables.vow3 }}"  class="form-control mention" id="vow3" name="vow3" placeholder="" type="text" /></p>
+            <p><strong>Rank:</strong> <select   class="form-control"  id="rank3" name="rank3">
+                <option value="troublesome" {% if variables.rank3 is defined and variables.rank3 == "troublesome"  %}selected="selected" {% endif %}  >troublesome</option>
+                <option value="dangerous" {% if variables.rank3 is defined and variables.rank3 == "dangerous"  %}selected="selected" {% endif %}  >dangerous</option>
+                <option value="formidable" {% if variables.rank3 is defined and variables.rank3 == "formidable"  %}selected="selected" {% endif %}  >formidable</option>
+                <option value="extreme" {% if variables.rank3 is defined and variables.rank3 == "extreme"  %}selected="selected" {% endif %}  >extreme</option>
+                <option value="epic" {% if variables.rank3 is defined and variables.rank3 == "epic"  %}selected="selected" {% endif %}  >epic</option>
+            </select> <strong>Ticks:</strong> <input  value="{{ variables.tick3 is defined ? variables.tick3 }}"  class="form-control mention" id="tick3" name="tick3" placeholder="" type="text" /> <strong> |Progress:</strong> <input  value="{{ variables.progress3 is defined ? variables.progress3 }}"  class="form-control mention" id="progress3" name="progress3" placeholder="" type="text" /> <strong> |Menace:</strong> <input  value="{{ variables.menace3 is defined ? variables.menace3 }}"  class="form-control mention" id="menace3" name="menace3" placeholder="" type="text" /></p>
+        </div>
+        <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 solidbox">
+            <h6>4 | Progress | Vow</h6>
+            <p><strong>Title:</strong><input  value="{{ variables.vow4 is defined ? variables.vow4 }}"  class="form-control mention" id="vow4" name="vow4" placeholder="" type="text" /></p>
+            <p><strong>Rank:</strong> <select   class="form-control"  id="rank4" name="rank4">
+                <option value="troublesome" {% if variables.rank4 is defined and variables.rank4 == "troublesome"  %}selected="selected" {% endif %}  >troublesome</option>
+                <option value="dangerous" {% if variables.rank4 is defined and variables.rank4 == "dangerous"  %}selected="selected" {% endif %}  >dangerous</option>
+                <option value="formidable" {% if variables.rank4 is defined and variables.rank4 == "formidable"  %}selected="selected" {% endif %}  >formidable</option>
+                <option value="extreme" {% if variables.rank4 is defined and variables.rank4 == "extreme"  %}selected="selected" {% endif %}  >extreme</option>
+                <option value="epic" {% if variables.rank4 is defined and variables.rank4 == "epic"  %}selected="selected" {% endif %}  >epic</option>
+            </select> <strong>Ticks:</strong> <input  value="{{ variables.tick4 is defined ? variables.tick4 }}"  class="form-control mention" id="tick4" name="tick4" placeholder="" type="text" /> <strong> |Progress:</strong> <input  value="{{ variables.progress4 is defined ? variables.progress4 }}"  class="form-control mention" id="progress4" name="progress4" placeholder="" type="text" /> <strong> |Menace:</strong> <input  value="{{ variables.menace4 is defined ? variables.menace4 }}"  class="form-control mention" id="menace4" name="menace4" placeholder="" type="text" /></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 solidbox">
+            <h6>5 | Progress | Vow</h6>
+            <p><strong>Title:</strong><input  value="{{ variables.vow5 is defined ? variables.vow5 }}"  class="form-control mention" id="vow5" name="vow5" placeholder="" type="text" /></p>
+            <p><strong>Rank:</strong> <select   class="form-control"  id="rank5" name="rank5">
+                <option value="troublesome" {% if variables.rank5 is defined and variables.rank5 == "troublesome"  %}selected="selected" {% endif %}  >troublesome</option>
+                <option value="dangerous" {% if variables.rank5 is defined and variables.rank5 == "dangerous"  %}selected="selected" {% endif %}  >dangerous</option>
+                <option value="formidable" {% if variables.rank5 is defined and variables.rank5 == "formidable"  %}selected="selected" {% endif %}  >formidable</option>
+                <option value="extreme" {% if variables.rank5 is defined and variables.rank5 == "extreme"  %}selected="selected" {% endif %}  >extreme</option>
+                <option value="epic" {% if variables.rank5 is defined and variables.rank5 == "epic"  %}selected="selected" {% endif %}  >epic</option>
+            </select> <strong>Ticks:</strong> <input  value="{{ variables.tick5 is defined ? variables.tick5 }}"  class="form-control mention" id="tick5" name="tick5" placeholder="" type="text" /> <strong> |Progress:</strong> <input  value="{{ variables.progress5 is defined ? variables.progress5 }}"  class="form-control mention" id="progress5" name="progress5" placeholder="" type="text" /> <strong> |Menace:</strong> <input  value="{{ variables.menace5 is defined ? variables.menace5 }}"  class="form-control mention" id="menace5" name="menace5" placeholder="" type="text" /></p>
+        </div>
+        <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 solidbox">
+            <h6>6 | Progress | Vow</h6>
+            <p><strong>Title:</strong><input  value="{{ variables.vow6 is defined ? variables.vow6 }}"  class="form-control mention" id="vow6" name="vow6" placeholder="" type="text" /></p>
+            <p><strong>Rank:</strong> <select   class="form-control"  id="rank6" name="rank6">
+                <option value="troublesome" {% if variables.rank6 is defined and variables.rank6 == "troublesome"  %}selected="selected" {% endif %}  >troublesome</option>
+                <option value="dangerous" {% if variables.rank6 is defined and variables.rank6 == "dangerous"  %}selected="selected" {% endif %}  >dangerous</option>
+                <option value="formidable" {% if variables.rank6 is defined and variables.rank6 == "formidable"  %}selected="selected" {% endif %}  >formidable</option>
+                <option value="extreme" {% if variables.rank6 is defined and variables.rank6 == "extreme"  %}selected="selected" {% endif %}  >extreme</option>
+                <option value="epic" {% if variables.rank6 is defined and variables.rank6 == "epic"  %}selected="selected" {% endif %}  >epic</option>
+            </select> <strong>Ticks:</strong> <input  value="{{ variables.tick6 is defined ? variables.tick6 }}"  class="form-control mention" id="tick6" name="tick6" placeholder="" type="text" /> <strong> |Progress:</strong> <input  value="{{ variables.progress6 is defined ? variables.progress6 }}"  class="form-control mention" id="progress6" name="progress6" placeholder="" type="text" /> <strong> |Menace:</strong> <input  value="{{ variables.menace6 is defined ? variables.menace6 }}"  class="form-control mention" id="menace6" name="menace6" placeholder="" type="text" /></p>
+        </div>
+    </div>
+    <div class="row bottom">
+        <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 solidbox">
+            <h6>7 | Progress | Vow</h6>
+            <p><strong>Title:</strong><input  value="{{ variables.vow7 is defined ? variables.vow7 }}"  class="form-control mention" id="vow7" name="vow7" placeholder="" type="text" /></p>
+            <p><strong>Rank:</strong> <select   class="form-control"  id="rank7" name="rank7">
+                <option value="troublesome" {% if variables.rank7 is defined and variables.rank7 == "troublesome"  %}selected="selected" {% endif %}  >troublesome</option>
+                <option value="dangerous" {% if variables.rank7 is defined and variables.rank7 == "dangerous"  %}selected="selected" {% endif %}  >dangerous</option>
+                <option value="formidable" {% if variables.rank7 is defined and variables.rank7 == "formidable"  %}selected="selected" {% endif %}  >formidable</option>
+                <option value="extreme" {% if variables.rank7 is defined and variables.rank7 == "extreme"  %}selected="selected" {% endif %}  >extreme</option>
+                <option value="epic" {% if variables.rank7 is defined and variables.rank7 == "epic"  %}selected="selected" {% endif %}  >epic</option>
+            </select> <strong>Ticks:</strong> <input  value="{{ variables.tick7 is defined ? variables.tick7 }}"  class="form-control mention" id="tick7" name="tick7" placeholder="" type="text" /> <strong> |Progress:</strong> <input  value="{{ variables.progress7 is defined ? variables.progress7 }}"  class="form-control mention" id="progress7" name="progress7" placeholder="" type="text" /> <strong> |Menace:</strong> <input  value="{{ variables.menace7 is defined ? variables.menace7 }}"  class="form-control mention" id="menace7" name="menace7" placeholder="" type="text" /></p>
+        </div>
+        <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 solidbox">
+            <h6>8 | Progress | Vow</h6>
+            <p><strong>Title:</strong><input  value="{{ variables.vow8 is defined ? variables.vow8 }}"  class="form-control mention" id="vow8" name="vow8" placeholder="" type="text" /></p>
+            <p><strong>Rank:</strong> <select   class="form-control"  id="rank8" name="rank8">
+                <option value="troublesome" {% if variables.rank8 is defined and variables.rank8 == "troublesome"  %}selected="selected" {% endif %}  >troublesome</option>
+                <option value="dangerous" {% if variables.rank8 is defined and variables.rank8 == "dangerous"  %}selected="selected" {% endif %}  >dangerous</option>
+                <option value="formidable" {% if variables.rank8 is defined and variables.rank8 == "formidable"  %}selected="selected" {% endif %}  >formidable</option>
+                <option value="extreme" {% if variables.rank8 is defined and variables.rank8 == "extreme"  %}selected="selected" {% endif %}  >extreme</option>
+                <option value="epic" {% if variables.rank8 is defined and variables.rank8 == "epic"  %}selected="selected" {% endif %}  >epic</option>
+            </select> <strong>Ticks:</strong> <input  value="{{ variables.tick8 is defined ? variables.tick8 }}"  class="form-control mention" id="tick8" name="tick8" placeholder="" type="text" /> <strong> |Progress:</strong> <input  value="{{ variables.progress8 is defined ? variables.progress8 }}"  class="form-control mention" id="progress8" name="progress8" placeholder="" type="text" /> <strong> |Menace:</strong> <input  value="{{ variables.menace8 is defined ? variables.menace8 }}"  class="form-control mention" id="menace8" name="menace8" placeholder="" type="text" /></p>
+        </div>
+    </div>
+</div>

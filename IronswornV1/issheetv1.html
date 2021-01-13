@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="roughdraft.css">
+  </head>
+
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>-->
+<body>
+<!--sheet-->
+<div class="sheet">
+    <!--name/xp/failure/bond progress-->
+    <div class="row top">
+        <!--name-->
+        <div class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3 solidbox">
+            <h6>NAME</h6>
+            <p>{% if variables.name is defined %} {{ variables.name }} {% endif %}</p>
+        </div>
+        <!--xp-->
+        <div class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3 solidbox">
+            <h6>XP</h6>
+            <p><strong>Total: </strong>{% if variables.xptotal is defined %} {{ variables.xptotal }} {% endif %}</p>
+            <p><strong>Used: </strong>{% if variables.xpused is defined %} {{ variables.xpused }} {% endif %}</p>
+        </div>
+        <!--failure-->
+        <div class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3 solidbox">
+            <h6>FAILURE</h6>
+            <p><strong>Tick: </strong>{% if variables.failuretick is defined %} {{ variables.failuretick }} {% endif %}</p>
+            <p><strong>Progress: </strong>{% if variables.failureprogress is defined %} {{ variables.failureprogress }} {% endif %}</p>
+        </div>
+        <!--bond progress-->
+        <div class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3 solidbox">
+            <h6>BOND PROGRESS</h6>
+            <p><strong>Ticks: </strong>{% if variables.bondstick is defined %} {{ variables.bondstick }} {% endif %}</p>
+            <p><strong>Progress: </strong>{% if variables.bondsprogress is defined %} {{ variables.bondsprogress }} {% endif %}</p>
+        </div>
+    </div>
+    <hr class="hr-dark">
+    <!--bonds and notes-->
+    <div class="row solidbox bondsbox">
+        <div class="col-12">
+            <h6>Bonds & Notes</h6>
+        </div>
+        <div class="col-12">
+            <p>{% if variables.bondsnotes is defined %} {{ variables.bondsnotes }} {% endif %}</p>
+        </div>
+    </div>
+    <hr class="hr-dark">
+    <!--edge/heart/iron/shadow/wits-->
+    <div class="row">
+        <!--edge-->
+        <div class="col-12 col-xs-12 col-sm-6 col-md-2 col-lg-2 solidbox">
+            <h6>EDGE</h6>
+            <p>{% if variables.edge is defined %} {{ variables.edge }} {% endif %}</p>
+        </div>
+        <!--heart-->
+        <div class="col-12 col-xs-12 col-sm-6 col-md-2 col-lg-2 solidbox">
+            <h6>HEART</h6>
+            <p>{% if variables.heart is defined %} {{ variables.heart }} {% endif %}</p>
+        </div>
+        <!--iron-->
+        <div class="col-12 col-xs-12 col-sm-6 col-md-2 col-lg-2 solidbox">
+            <h6>IRON</h6>
+            <p>{% if variables.iron is defined %} {{ variables.iron }} {% endif %}</p>
+        </div>
+        <!--shadow-->
+        <div class="col-12 col-xs-12 col-sm-6 col-md-2 col-lg-2 solidbox">
+            <h6>SHADOW</h6>
+            <p>{% if variables.shadow is defined %} {{ variables.shadow }} {% endif %}</p>
+        </div>
+        <!--wits-->
+        <div class="col-12 col-xs-12 col-sm-6 col-md-2 col-lg-2 solidbox">
+            <h6>WITS</h6>
+            <p>{% if variables.wits is defined %} {{ variables.wits }} {% endif %}</p>
+        </div>
+        <div class="col-12 col-xs-12 col-sm-6 col-md-2 col-lg-2">
+            <img src="https://www.worldanvil.com/uploads/images/c37eb93ac6a83d7712127d48a9e4f1e9.png" alt="ironswornLogo" width="65%">
+        </div>
+    </div>
+    <hr class="hr-dark">
+    <!--secondary stats-->
+    <div class="row">
+        <div class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3 solidbox">
+            <h6>Momentum</h6>
+            <p>{% if variables.momentum is defined %} {{ variables.momentum }} {% endif %}</p>
+        </div>
+        <div class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3 solidbox">
+            <h6>Supply</h6>
+            <p>{% if variables.supply is defined %} {{ variables.supply }} {% endif %}</p>
+        </div>
+        <div class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3 solidbox">
+            <h6>Health</h6>
+            <p>{% if variables.health is defined %} {{ variables.health }} {% endif %}</p>
+        </div>
+        <div class="col-12 col-xs-12 col-sm-6 col-md-6 col-lg-3 solidbox">
+            <h6>Spirit</h6>
+            <p>{% if variables.spirit is defined %} {{ variables.spirit }} {% endif %}</p>
+        </div>
+    </div>
+    <hr class="hr-dark">
+    <!--Debilities-->
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 solidbox">
+            <p>{% if variables.wounded is defined %} <i class="fas fa-check"></i> {% endif %} <strong>Wounded</strong></p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 solidbox">
+            <p>{% if variables.shaken is defined %} <i class="fas fa-check"></i> {% endif %} <strong>Shaken</strong></p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 solidbox">
+            <p>{% if variables.unprepared is defined %} <i class="fas fa-check"></i> {% endif %} <strong>Unprepared</strong></p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 solidbox">
+            <p>{% if variables.encumbered is defined %} <i class="fas fa-check"></i> {% endif %} <strong>Encumbered</strong></p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 solidbox">
+            <p>{% if variables.maimed is defined %} <i class="fas fa-check"></i> {% endif %}
+                <strong>Maimed</strong></p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 solidbox">
+            <p>{% if variables.corrupted is defined %} <i class="fas fa-check"></i> {% endif %} <strong>Corrupted</strong></p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 solidbox">
+            <p>{% if variables.cursed is defined %} <i class="fas fa-check"></i> {% endif %} <strong>Cursed</strong></p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 solidbox">
+            <p>{% if variables.tormented is defined %} <i class="fas fa-check"></i> {% endif %} <strong>Tormented</strong></p>
+        </div>
+    </div>
+    <hr class="hr-dark">
+    <!--Progress-->
+    <div class="row">
+        <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 solidbox">
+            <h6>Progress | Vow</h6>
+            <p><strong>Title:</strong>{% if variables.vow1 is defined %} {{ variables.vow1 }} {% endif %}</p>
+            <p><strong>Rank:</strong>  {% if variables.rank1 is defined %} {{ variables.rank1 }} {% endif %} <strong>Ticks:</strong> {% if variables.tick1 is defined %} {{ variables.tick1 }} {% endif %} <strong> |Progress:</strong> {% if variables.progress1 is defined %} {{ variables.progress1 }} {% endif %} <strong> |Menace:</strong> {% if variables.menace1 is defined %} {{ variables.menace1 }} {% endif %}</p>
+        </div>
+        <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 solidbox">
+            <h6>Progress | Vow</h6>
+            <p><strong>Title:</strong>{% if variables.vow2 is defined %} {{ variables.vow2 }} {% endif %}</p>
+            <p><strong>Rank:</strong> {% if variables.rank2 is defined %} {{ variables.rank2 }} {% endif %}  <strong>Ticks:</strong> {% if variables.tick2 is defined %} {{ variables.tick2 }} {% endif %} <strong> |Progress:</strong> {% if variables.progress2 is defined %} {{ variables.progress2 }} {% endif %} <strong> |Menace:</strong> {% if variables.menace2 is defined %} {{ variables.menace2 }} {% endif %}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 solidbox">
+            <h6>Progress | Vow</h6>
+            <p><strong>Title:</strong>{% if variables.vow3 is defined %} {{ variables.vow3 }} {% endif %}</p>
+            <p><strong>Rank:</strong> {% if variables.rank3 is defined %} {{ variables.rank3 }} {% endif %} <strong>Ticks:</strong> {% if variables.tick3 is defined %} {{ variables.tick3 }} {% endif %} <strong> |Progress:</strong> {% if variables.progress3 is defined %} {{ variables.progress3 }} {% endif %} <strong> |Menace:</strong> {% if variables.menace3 is defined %} {{ variables.menace3 }} {% endif %}</p>
+        </div>
+        <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 solidbox">
+            <h6>Progress | Vow</h6>
+            <p><strong>Title:</strong>{% if variables.vow4 is defined %} {{ variables.vow4 }} {% endif %}</p>
+            <p><strong>Rank:</strong> {% if variables.rank4 is defined %} {{ variables.rank4 }} {% endif %} <strong>Ticks:</strong> {% if variables.tick4 is defined %} {{ variables.tick4 }} {% endif %} <strong> |Progress:</strong> {% if variables.progress4 is defined %} {{ variables.progress4 }} {% endif %} <strong> |Menace:</strong> {% if variables.menace4 is defined %} {{ variables.menace4 }} {% endif %}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 solidbox">
+            <h6>Progress | Vow</h6>
+            <p><strong>Title:</strong>{% if variables.vow5 is defined %} {{ variables.vow5 }} {% endif %}</p>
+            <p><strong>Rank:</strong> {% if variables.rank5 is defined %} {{ variables.rank5 }} {% endif %} <strong>Ticks:</strong> {% if variables.tick5 is defined %} {{ variables.tick5 }} {% endif %} <strong> |Progress:</strong> {% if variables.progress5 is defined %} {{ variables.progress5 }} {% endif %} <strong> |Menace:</strong> {% if variables.menace5 is defined %} {{ variables.menace5 }} {% endif %}</p>
+        </div>
+    </div>
+    <div class="row bottom">
+        <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 solidbox">
+            <h6>Progress | Vow</h6>
+            <p><strong>Title:</strong>{% if variables.vow6 is defined %} {{ variables.vow6 }} {% endif %}</p>
+            <p><strong>Rank:</strong> {% if variables.rank6 is defined %} {{ variables.rank6 }} {% endif %} <strong>Ticks:</strong> {% if variables.tick6 is defined %} {{ variables.tick6 }} {% endif %} <strong> |Progress:</strong> {% if variables.progress6 is defined %} {{ variables.progress6 }} {% endif %} <strong> |Menace:</strong> {% if variables.menace6 is defined %} {{ variables.menace6 }} {% endif %}</p>
+        </div>
+        <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 solidbox">
+            <h6>Progress | Vow</h6>
+            <p><strong>Title:</strong>{% if variables.vow7 is defined %} {{ variables.vow7 }} {% endif %}</p>
+            <p><strong>Rank:</strong> {% if variables.rank7 is defined %} {{ variables.rank7 }} {% endif %} <strong>Ticks:</strong> {% if variables.tick7 is defined %} {{ variables.tick7 }} {% endif %} <strong> |Progress:</strong> {% if variables.progress7 is defined %} {{ variables.progress7 }} {% endif %} <strong> |Menace:</strong> {% if variables.menace7 is defined %} {{ variables.menace7 }} {% endif %}</p>
+        </div>
+        <div class="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-6 solidbox">
+            <h6>Progress | Vow</h6>
+            <p><strong>Title:</strong>{% if variables.vow8 is defined %} {{ variables.vow8 }} {% endif %}</p>
+            <p><strong>Rank:</strong> {% if variables.rank8 is defined %} {{ variables.rank8 }} {% endif %} <strong>Ticks:</strong> {% if variables.tick8 is defined %} {{ variables.tick8 }} {% endif %} <strong> |Progress:</strong> {% if variables.progress8 is defined %} {{ variables.progress8 }} {% endif %} <strong> |Menace:</strong> {% if variables.menace8 is defined %} {{ variables.menace8 }} {% endif %}</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

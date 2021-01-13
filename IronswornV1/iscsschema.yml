@@ -1,29 +1,41 @@
 fields:
-  iron:
+  xptotal:
     input: integer
-    label: "iron"
-  edge:
+    label: "xptotal"
+  xpused:
     input: integer
-    label: "edge"
-  shadow:
+    label: "xpused"
+  failuretick:
     input: integer
-    label: "shadow"
-  heart:
+    label: "failuretick"
+  failureprogress:
     input: integer
-    label: "heart"
-  wits:
-    input: integer
-    label: "wits"
-  bonds:
-    input: text
-    label: "bonds"
-    rows: 10
+    label: "failureprogress"
   bondstick:
     input: integer
     label: "bondstick"
   bondsprogress:
     input: integer
     label: "bondsprogress"
+  bondsnotes:
+    input: text
+    label: "bondsnotes"
+    rows: 10
+  edge:
+    input: integer
+    label: "edge"
+  heart:
+    input: integer
+    label: "heart"
+  iron:
+    input: integer
+    label: "iron"
+  shadow:
+    input: integer
+    label: "shadow"
+  wits:
+    input: integer
+    label: "wits"
   momentum:
     input: integer
     label: "momentum"
@@ -36,27 +48,15 @@ fields:
   spirit:
     input: integer
     label: "spirit"
-  xptotal:
-    input: integer
-    label:  xptotal"
-  xpused:
-    input: integer
-    label: "xpused"
-  failuretick:
-    input: integer
-    label: "failuretick"
-  failureprogress:
-    input: integer
-    label: "failureprogress"
   wounded:
     input: checkbox
     label: wounded
-  unprepared:
-    input: checkbox
-    label: unprepared
   shaken:
     input: checkbox
     label: shaken
+  unprepared:
+    input: checkbox
+    label: unprepared
   encumbered:
     input: checkbox
     label: encumbered
@@ -240,6 +240,3 @@ fields:
   menace8:
     Input: integer
     label: "menace8"
-  vow9:
-    input: string
-    label: "vow9"
